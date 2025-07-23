@@ -8,7 +8,7 @@ import base64
 import hmac
 import hashlib
 import struct
-
+#ceva
 
 # ========= function for generating a secret ========
 def generate_shared_secret():
