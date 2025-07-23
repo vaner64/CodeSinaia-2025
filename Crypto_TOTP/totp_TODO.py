@@ -84,8 +84,8 @@ def get_otp(t=30):
         print(" > Generated OTP:", otp, "valid for", int(t-(time.time()%t))+1, "seconds")
         # loop for waiting 30 sec between OTP generation
         for _ in tqdm (range(int(t-(time.time()%t))+1), 
-               desc="Loading…", 
-               ascii=False, ncols=75):
+                desc="Loading…", 
+                ascii=False, ncols=75):
             time.sleep(1)
 
 
@@ -99,4 +99,4 @@ if __name__ == '__main__':
         get_otp()
     else:
         print(" >> Invalid flag: can either be \"--generate-qr [user_id]\" or \"--get-otp\"")
-   
+    
